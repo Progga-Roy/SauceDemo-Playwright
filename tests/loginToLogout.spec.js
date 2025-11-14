@@ -8,7 +8,14 @@ test('A user logs in with valid credentials, adds one product to the cart, verif
  await page.fill("#user-name","standard_user")
  await page.fill("//input[@id='password']","secret_sauce");
  await page.click("//input[@id='login-button']");
- await page.waitForTimeout(3000);
+ await page.waitForTimeout(1000);
+// Click for the item "Sauce Labs Bike Light and add to cart"
+ await page.click("//div[normalize-space()='Sauce Labs Bike Light']");
+ await page.click("//button[@id='add-to-cart']");
+ //Click cart icon to verify the product name
+ await page.click("//a[@class='shopping_cart_link']")
+ await expect(page.locator("//div[@class='inventory_item_name']")).toHaveText("Sauce Labs Bike Light");
+ await page.waitForTimeout(2000);
 
 
 });
