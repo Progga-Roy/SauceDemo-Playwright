@@ -49,17 +49,18 @@ If you would like to run the tests on your own machine, you can follow these ste
 
 ``` ### Clone this repository
 git clone [ https://github.com/Progga-Roy/SauceDemo-Playwright.git]
+```
+```
+ Install all dependencies from package.json
+ `npm install`
 
-### Install all dependencies from package.json
-`npm install`
-
-### Install Playwright's browser binaries
+ Install Playwright's browser binaries
 `npx playwright install`
 
-### Run all tests in headed mode (watch the browser)
+ Run all tests in headed mode (watch the browser)
 `npx playwright test --headed`
 
-### Open the last test report in your browser
+ Open the last test report in your browser
 `npx playwright show-report`
 ```
 ### View the Test Report
