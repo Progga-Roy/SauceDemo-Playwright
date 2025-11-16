@@ -9,17 +9,17 @@ The primary goal is to validate the critical user journey: logging in, adding a 
 
 This framework currently tests the following end-to-end user flow (loginToLogout.spec.js):
 
-Navigate: Opens the SauceDemo login page.
+* Navigate: Opens the SauceDemo login page.
 
-Login: Enters valid credentials (standard_user and secret_sauce) and logs in.
+* Login: Enters valid credentials (standard_user and secret_sauce) and logs in.
 
-Add to Cart: Selects the "Sauce Labs Bike Light" and adds it to the cart.
+* Add to Cart: Selects the "Sauce Labs Bike Light" and adds it to the cart.
 
-Verify Cart: Navigates to the shopping cart page.
+* Verify Cart: Navigates to the shopping cart page.
 
-Assert: Verifies that the cart contains the correct item ("Sauce Labs Bike Light").
+* Assert: Verifies that the cart contains the correct item ("Sauce Labs Bike Light").
 
-Logout: Opens the side menu and successfully logs out, returning to the login page.
+* Logout: Opens the side menu and successfully logs out, returning to the login page.
 
 ✨ Code Highlight
 
@@ -29,11 +29,11 @@ Tests are written to be readable, maintainable, and resilient. This project uses
 
 🛠️ Tech Stack
 
-Test Runner: Playwright
+* Test Runner: Playwright
 
-Language: JavaScript (ESNext)
+* Language: JavaScript (ESNext)
 
-Package Manager: npm
+* Package Manager: npm
 
 📂 How to Run This Project (Locally)
 
@@ -41,32 +41,30 @@ If you would like to run the tests on your own machine, you can follow these ste
 
 1. Prerequisites
 
-Node.js (v18 or higher)
-
-Git
+* Node.js (v18 or higher)
+  
+* Git
 
 2. Clone & Install
 
-### Clone this repository
+``` ### Clone this repository
 git clone [ https://github.com/Progga-Roy/SauceDemo-Playwright.git]
 
 ### Install all dependencies from package.json
-npm install
+`npm install`
 
 ### Install Playwright's browser binaries
-npx playwright install
-
-3. Execute Tests
-### Run all tests in headless mode (no browser window)
-npx playwright test
+`npx playwright install`
 
 ### Run all tests in headed mode (watch the browser)
-npx playwright test --headed
-
-
-4. View the Test Report
-
-After the tests run, a playwright-report folder is created. To view the interactive HTML report:
+`npx playwright test --headed`
 
 ### Open the last test report in your browser
-npx playwright show-report
+`npx playwright show-report`
+```
+### View the Test Report
+After the tests run, a playwright-report folder is created. To view the interactive HTML report:
+
+![Alt Text](Reports/screenshot2.png)
+![Alt Text](Reports/Screenshot1.png)
+
